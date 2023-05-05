@@ -61,7 +61,7 @@ if ($usuario == ''){
 	      <th scope="col">Descrição</th>
 	      <th scope="col">Data Cadastro</th>
 	      
-	      <th scope="col">Ações</th>
+	      <th style="text-align:center;" scope="col">Ações</th>
 	    </tr>
 	  </thead>
 	  <tbody>
