@@ -178,13 +178,13 @@ if(isset($_POST['salvar'])){
 	
 
 		//VERIFICAR SE O PRODUTO JÁ ESTÁ CADASTRADO
-		$res = $conexao->query("SELECT * from produtos where nome = '$nome'");
+		$res = $conexao->query("SELECT * FROM produtos WHERE nome = '$nome'");
 		$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 		$linhas = count($dados);
 
 		if($linhas == 0){
 			
-			$res = $conexao->prepare("insert into produtos (nome, descricao, data) values (:nome, :descricao, curDate())");
+			$res = $conexao->prepare("INSERT INTO produtos (nome, descricao, data) VALUES (:nome, :descricao, curDate())");
 
 			$res->bindValue(":nome", $nome);
 			$res->bindValue(":descricao", $descricao);

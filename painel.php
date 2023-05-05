@@ -83,7 +83,7 @@ if ($usuario == ''){
 	  			$nome_buscar = $_GET['txtbuscar'] . '%';
 
 	  			
-	  			$res = $conexao->query("SELECT * from fornecedores where nome LIKE '$nome_buscar' order by nome asc");
+	  			$res = $conexao->query("SELECT * FROM fornecedores WHERE nome LIKE '$nome_buscar' order by nome asc");
 
 	  		}else{
 	  			$res = $conexao->query("SELECT * from fornecedores order by nome asc");
