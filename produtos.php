@@ -281,7 +281,7 @@ if(isset($_POST['editar'])){
 		if($nome_rec != $nome){
 
 			//VERIFICAR SE O PRODUTO JÁ ESTÁ CADASTRADO
-			$res = $conexao->query("SELECT * from produtos where nome = '$nome'");
+			$res = $conexao->query("SELECT * FROM produtos WHERE nome = '$nome'");
 			$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 			$linhas = count($dados);
 
@@ -294,7 +294,7 @@ if(isset($_POST['editar'])){
 
 
 			
-			$res = $conexao->prepare("update produtos set nome = :nome, descricao = :descricao where id = '$id_editar'");
+			$res = $conexao->prepare("UPDATE produtos SET nome = :nome, descricao = :descricao WHERE id = '$id_editar'");
 
 			$res->bindValue(":nome", $nome);
 			$res->bindValue(":descricao", $descricao);
