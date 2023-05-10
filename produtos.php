@@ -252,9 +252,7 @@ foreach ($dados as $key => $value) {
 			    <label for="exampleFormControlInput1">Descrição</label>
 			    <input type="text" class="form-control" id="exampleFormControlInput1" name="descricao" placeholder="Descrição" value="<?php echo $descricao; ?>">
 			  </div>
-			 
-			 
-			  
+
 			
       </div>
      
