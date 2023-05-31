@@ -114,7 +114,7 @@ if(isset($_POST['registrar'])){
 			$res->bindValue(":nivel", "Comum");
 			$res->execute();
 
-			echo "<script language='javascript'>window.alert('Usuário Cadastrado!'); </script>";
+			echo "<script language='javascript'>window.alert('Usuário Cadastrado!'.$nome); </script>";
 		}else{
 			echo "<script language='javascript'>window.alert('Este usuário já está cadastrado!'); </script>";
 		}
