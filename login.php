@@ -90,8 +90,6 @@
 if(isset($_POST['registrar'])){
 
 	
-
-
 	$nome = $_POST['nome'];
 	$email = $_POST['email'];
 	$senha = $_POST['senha'];
